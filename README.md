@@ -4,7 +4,7 @@ A simple command-line To-Do List application built in Python as part of the Deco
 
 ## About This Project
 
-This project is focused on understanding the fundamentals of **Python lists**.
+This project focuses on understanding the fundamentals of Python lists.
 
 The application allows users to:
 
@@ -28,45 +28,57 @@ The application allows users to:
 
 ## Project Structure
 
-    text
+```text
 project_1_todo_list/
 ├── todo.py
 └── README.md
+```
 
+* `todo.py` — Contains the main To-Do List application.
+* `README.md` — Contains information about the project and instructions for running it.
 
 ## How to Run
 
 1. Make sure Python 3 is installed.
 2. Open the project folder in VS Code.
-3. Open the terminal in VS Code.
-4. Run the program using:
+3. Open the VS Code terminal.
+4. Run the program:
 
+```bash
 python todo.py
+```
 
-
-5. Follow the instructions shown in the menu.
+5. Select an option from the menu.
 
 ## How It Works
 
-Tasks are stored in a Python list:
+The program starts with an empty list:
 
+```python
 tasks = []
+```
 
-When the user enters a task, it is added to the list using append():
+When the user enters a task, the task is added to the list using `append()`:
 
+```python
 tasks.append(task)
+```
 
-The program uses a for loop to go through the list and display each task:
+The program checks whether the list is empty. If tasks are available, a `for` loop is used to go through the list and display each task:
 
+```python
 for number, task in enumerate(tasks, start=1):
-    print(f"{number}.{task}")
+    print(f"{number}. {task}")
+```
 
+The program continues running until the user selects the Exit option.
 
 This project demonstrates the basic **Storage → Process → Display** concept using a Python list.
 
 ## Author
 
 Built as part of the DecodeLabs Python Programming Internship, Batch 2026.
+
 
 
 
