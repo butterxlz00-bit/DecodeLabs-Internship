@@ -43,7 +43,7 @@ def view_task():
     else:
         # Loop through the list and display each task
         for number, task in enumerate(tasks, start=1):
-            print(f"{number}.f{task}")
+            print(f"{number}. {task}")
 
 
 # Welcome message
